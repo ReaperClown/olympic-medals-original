@@ -39,10 +39,6 @@ small {
   margin: 0 auto;
 }
 
-.content {
-  max-height: 692px;
-}
-
 .linha {
   display: flex;
   flex-flow: row wrap;
@@ -86,8 +82,8 @@ body > header .linha .coluna h1 {
 /* MAIN */
 main {
   background-color: #f7f7f7;
-  height: 100vh;
-  padding-top: 80px;
+  height: 85vh;
+  padding-top: 60px;
 }
 main .container {
 }
@@ -195,4 +191,7 @@ main article section .linha .total {
   flex-basis: 76px;
 }
 main article section .linha .total span {
+}
+.quadro-medalhas {
+  height: 500px;
 }
