@@ -1,0 +1,258 @@
+/*!
+--------------------------------------------
+ESTRUTURAÇÃO BASE (v1)
+--------------------------------------------
+**** GERAL
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @media
+*/
+
+/* GERAL */
+html,
+body,
+header,
+main,
+footer,
+article,
+div,
+span,
+p,
+a,
+figure,
+img,
+small {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  outline: none;
+}
+
+#toggleDarkLabel {
+    width: 50px;
+    height: 26px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    display: flex;
+    background-color: #111;
+    border-radius: 50px;
+    position: relative;
+    float: right;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    transform: scale(0.9, 0.9);
+  }
+  
+  .toggleDark {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .darkModeToggle {
+    background-color: #ddd;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    transition: transform 0.2s linear;
+  }
+  
+  .toggleDark:checked + .toggleDarkLabel .darkModeToggle {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+
+  .dark {
+      float: right;
+      display: flex;
+      transform: translateY(50%);
+      -webkit-transform: translateY(50%);
+      -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      -o-transform: translateY(50%);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  box-shadow: inset 0 0 1em rgb(167, 167, 167), 0 0 1em rgb(87, 86, 86);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  max-height: 692px;
+}
+
+.linha {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-right: 16px;
+  min-width: 290px;
+  min-height: 40px;
+}
+
+.coluna {
+}
+
+/* BODY */
+body {
+}
+
+/* HEADER */
+body > header {
+  background-image: url(../img/bk-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center -115px;
+  padding: 18px 0;
+}
+body > header .container {
+}
+body > header .linha {
+}
+body > header .linha .coluna {
+}
+body > header .linha .coluna figure {
+}
+body > header .linha .coluna figure img {
+  width: 100%;
+  max-width: 150px;
+}
+body > header .linha .coluna h1 {
+  color: #fff;
+  margin-left: 30px;
+}
+
+/* MAIN */
+main {
+  background-color: #f7f7f7;
+  height: 100vh;
+  padding-top: 80px;
+}
+main .container {
+}
+main article {
+  box-shadow: 0 0 14px -9px #000;
+}
+main article::selection {
+  background-color: #f7cc48;
+}
+main article .linha {
+}
+main article .linha .coluna {
+  padding: 0 15px;
+}
+main article header {
+  padding: 15px 0;
+}
+main article header .linha {
+}
+main article header .linha .coluna {
+}
+main article header .linha .coluna span {
+  font-size: 26px;
+  font-weight: bold;
+}
+main article header .linha .coluna-rank {
+}
+main article header .linha .coluna-rank span {
+}
+main article header .linha .coluna-country {
+  flex-grow: 2;
+}
+main article header .linha .coluna-country span {
+}
+main article header .linha .coluna-medalha {
+}
+main article header .linha .coluna-medalha span {
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+main article header .linha .coluna-medalha:nth-child(3) span {
+  background-color: #f7cc48;
+}
+main article header .linha .coluna-medalha:nth-child(4) span {
+  background-color: #d8d6d6;
+}
+main article header .linha .coluna-medalha:nth-child(5) span {
+  background-color: #b7955e;
+}
+main article header .linha .coluna-total {
+}
+main article header .linha .coluna-total span {
+}
+main article section {
+  height: 608px;
+  overflow-y: scroll;
+}
+main article section .linha {
+  padding: 15px 0;
+}
+main article section .linha:nth-child(2n + 1) {
+  background-color: #e6e6e6;
+}
+main article section .linha .coluna {
+}
+main article section .linha .coluna span {
+  font-size: 22px;
+}
+main article section .linha .coluna-rank {
+  flex-basis: 95px;
+}
+main article section .linha .coluna-rank span {
+}
+main article section .linha .country {
+  flex-grow: 2;
+}
+main article section .linha .country img {
+}
+main article section .linha .country span {
+  vertical-align: top;
+}
+.medal_gold,
+.medal_silver,
+.medal_bronze {
+  flex-basis: 84px;
+}
+main article section .linha .medal_gold {
+}
+main article section .linha .medal_gold span {
+}
+main article section .linha .medal_silver {
+}
+main article section .linha .medal_silver span {
+}
+main article section .linha .medal_bronze {
+}
+main article section .linha .medal_bronze span {
+}
+main article section .linha .total {
+  flex-basis: 76px;
+}
+main article section .linha .total span {
+}
