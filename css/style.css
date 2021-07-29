@@ -33,60 +33,6 @@ small {
   outline: none;
 }
 
-#toggleDarkLabel {
-    width: 50px;
-    height: 26px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4px;
-    display: flex;
-    background-color: #111;
-    border-radius: 50px;
-    position: relative;
-    float: right;
-    margin-bottom: 8px;
-    border: 1px solid #ddd;
-    transform: scale(0.9, 0.9);
-  }
-  
-  .toggleDark {
-    opacity: 0;
-    position: absolute;
-  }
-  
-  .darkModeToggle {
-    background-color: #ddd;
-    width: 20px;
-    border-radius: 50%;
-    height: 20px;
-    top: 2px;
-    left: 2px;
-    position: absolute;
-    transition: transform 0.2s linear;
-  }
-  
-  .toggleDark:checked + .toggleDarkLabel .darkModeToggle {
-    transform: translateX(24px);
-  }
-  
-  .fa-moon {
-    color: #f1c40f;
-  }
-  
-  .fa-sun {
-    color: #f39c12;
-  }
-
-  .dark {
-      float: right;
-      display: flex;
-      transform: translateY(50%);
-      -webkit-transform: translateY(50%);
-      -moz-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      -o-transform: translateY(50%);
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -94,12 +40,6 @@ small {
 }
 
 .content {
-  box-shadow: inset 0 0 1em rgb(167, 167, 167), 0 0 1em rgb(87, 86, 86);
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
   max-height: 692px;
 }
 
